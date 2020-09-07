@@ -26,5 +26,9 @@
   },
   "bugs": {
     "url": "https://github.com/vinodloha/react-lib/issues"
+  },
+  "dependencies": {
+    "@xts-ds/design-tokens": "^1.0.1",
+    "styled-components": "^5.2.0"
   }
 }

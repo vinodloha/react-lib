@@ -28,7 +28,6 @@
     "url": "https://github.com/vinodloha/react-lib/issues"
   },
   "dependencies": {
-    "@xts-ds/design-tokens": "^1.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
