@@ -1,0 +1,16 @@
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom'
+
+import { {{ properCase name }}Vanilla } from '../index';
+
+describe('<{{ properCase name }} />', () => {
+  const testMessage = 'Test Message'
+  beforeEach(() => {
+    render(<{{ properCase name }}Vanilla>{testMessage}</{{ properCase name }}Vanilla>);
+  });
+
+  test('should render with test message', () => {
+    expect(screen.getByText(testMessage)).toBeInTheDocument()
+  });
+});

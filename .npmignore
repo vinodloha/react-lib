@@ -1,0 +1,17 @@
+.babelrc
+.editorconfig
+.huskyrc
+.lintstagedrc
+.prettierrc
+.gitattributes
+.gitignore
+.browserslistrc
+.sonarlint
+.eslintrc
+.eslintignore
+.esdoc.json
+.prettierignore
+.github
+.env
+config.json
+node_modules
