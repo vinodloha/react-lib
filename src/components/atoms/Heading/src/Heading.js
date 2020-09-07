@@ -18,15 +18,14 @@ Heading.defaultProps = {
   inheritedStyles: '',
   variant: '',
   className: '',
-  type: 'H1'
+  type: 'h1'
 };
 
 Heading.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node.isRequired,
   inheritedStyles: PropTypes.string,
-  variant: PropTypes.oneOf(['primary', 'secondary']),
-  type: PropTypes.string
+  type: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']),
 };
 
 const styledHeading = styled(Heading)`

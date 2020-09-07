@@ -33,7 +33,7 @@ import Heading, { HeadingVanilla } from '.';
 Experiment with this story with Knobs addon in Canvas mode.
 
 <Story name="Default Heading with knobs" parameters={ { decorators: [withKnobs] } }>
-   <Heading {...defaultConfig} variant={select('Variant', ['primary', 'secondary'])}>Test</Heading>
+   <Heading {...defaultConfig} type={select('type', ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])}>Test</Heading>
 </Story>
 
 ### Props 🔧
