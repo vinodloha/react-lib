@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom'
 
-import { ButtonVanilla } from '../index';
+import { ButtonVanilla } from '../src/index';
 
 describe('<Button />', () => {
   const testMessage = 'Test Message'

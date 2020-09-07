@@ -32,10 +32,8 @@ import {{ properCase name }}, { {{ properCase name }}Vanilla } from '.';
 
 Experiment with this story with Knobs addon in Canvas mode.
 
-<Story name="knobs" parameters={ { decorators: [withKnobs] } }>
-  <Story name="Default {{ properCase name }} with knobs">
+<Story name="Default {{ properCase name }} with knobs" parameters={ { decorators: [withKnobs] } }>
    <{{ properCase name }} {...defaultConfig} variant={select('Variant', ['primary', 'secondary'])}>Test</{{ properCase name }}>
-  </Story>
 </Story>
 
 ### Props 🔧

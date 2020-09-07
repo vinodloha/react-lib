@@ -1,0 +1,41 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, select } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
+
+import defaultConfig from './Heading.mock';
+
+// Import Styled Component to showcase variations
+import Heading, { HeadingVanilla } from '.';
+
+# Heading
+
+<Meta title="Atoms/Heading" component={ Heading } />
+
+## Vanilla  Heading
+
+<Preview withToolbar>
+  <Story name="Vanilla Heading">
+   <HeadingVanilla {...defaultConfig}>Test</HeadingVanilla>
+  </Story>
+</Preview>
+
+
+## Styled Default Heading
+
+<Preview withToolbar>
+  <Story name="Default Heading">
+   <Heading {...defaultConfig}>Test</Heading>
+  </Story>
+</Preview>
+
+### Playground
+
+Experiment with this story with Knobs addon in Canvas mode.
+
+<Story name="Default Heading with knobs" parameters={ { decorators: [withKnobs] } }>
+   <Heading {...defaultConfig} variant={select('Variant', ['primary', 'secondary'])}>Test</Heading>
+</Story>
+
+### Props 🔧
+
+<Props of={ HeadingVanilla } />
