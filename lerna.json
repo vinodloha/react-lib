@@ -1,0 +1,10 @@
+{
+  "packages": [
+    "src/styles",
+    "src/atoms/*",
+    "src/molecules/*"
+  ],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "independent"
+}

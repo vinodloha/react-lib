@@ -12,13 +12,6 @@ module.exports = {
   description: 'Add an unconnected component (atoms, molecules)',
   prompts: [
     {
-      type: 'list',
-      name: 'type',
-      message: 'Select the type of component',
-      default: 'Stateless Function',
-      choices: () => ['Stateless Function', 'Stateless Function (WithHooks)', 'HOC'],
-    },
-    {
       type: 'input',
       name: 'name',
       message: 'What should it be called?',
@@ -43,58 +36,70 @@ module.exports = {
   ],
   actions: data => {
     // Generate index.js and index.test.js
-    let componentTemplate;
+    let componentTemplate = './component/stateless.js.hbs';
 
-    switch (data.type) {
-      case 'Stateless Function': {
-        componentTemplate = './component/stateless.js.hbs';
-        break;
-      }
-      case 'HOC': {
-        componentTemplate = './component/hoc.js.hbs';
-        break;
-      }
-      default: {
-        componentTemplate = './component/statelessHooks.js.hbs';
-      }
-    }
+    // switch (data.type) {
+    //   case 'Stateless Function': {
+    //     componentTemplate = './component/stateless.js.hbs';
+    //     break;
+    //   }
+    //   case 'HOC': {
+    //     componentTemplate = './component/hoc.js.hbs';
+    //     break;
+    //   }
+    //   default: {
+    //     componentTemplate = './component/statelessHooks.js.hbs';
+    //   }
+    // }
 
     const actions = [
       {
         type: 'add',
-        path: '../src/components/{{ folder }}/{{properCase name}}/index.js',
+        path: '../src/components/{{ folder }}/{{properCase name}}/src/index.js',
         templateFile: './component/index.js.hbs',
         abortOnFail: true,
       },
       {
         type: 'add',
-        path: '../src/components/{{ folder }}/{{properCase name}}/{{properCase name}}.js',
+        path: '../src/components/{{ folder }}/{{properCase name}}/src/{{properCase name}}.js',
         templateFile: componentTemplate,
         abortOnFail: true,
       },
       {
         type: 'add',
         path:
-          '../src/components/{{ folder }}/{{properCase name}}/tests/{{properCase name}}.test.js',
+          '../src/components/{{ folder }}/{{properCase name}}/__tests__/{{properCase name}}.test.js',
         templateFile: './component/test.js.hbs',
         abortOnFail: true,
       },
       {
         type: 'add',
-        path: '../src/components/{{ folder }}/{{properCase name}}/{{properCase name}}.story.mdx',
+        path: '../src/components/{{ folder }}/{{properCase name}}/src/{{properCase name}}.story.mdx',
         templateFile: './component/story.mdx.hbs',
         abortOnFail: true,
       },
       {
         type: 'add',
-        path: '../src/components/{{ folder }}/{{properCase name}}/{{properCase name}}.mock.js',
+        path: '../src/components/{{ folder }}/{{properCase name}}/src/{{properCase name}}.mock.js',
         templateFile: './component/mock.js.hbs',
         abortOnFail: true,
       },
       {
         type: 'add',
-        path: '../src/components/{{ folder }}/{{properCase name}}/{{properCase name}}.style.js',
+        path: '../src/components/{{ folder }}/{{properCase name}}/src/{{properCase name}}.style.js',
         templateFile: './component/style.js.hbs',
+        abortOnFail: true,
+      },
+      {
+        type: 'add',
+        path: '../src/components/{{ folder }}/{{properCase name}}/package.json',
+        templateFile: './component/package.json.hbs',
+        abortOnFail: true,
+      },
+      {
+        type: 'add',
+        path: '../src/components/{{ folder }}/{{properCase name}}/README.md',
+        templateFile: './component/README.md.hbs',
         abortOnFail: true,
       },
     ];

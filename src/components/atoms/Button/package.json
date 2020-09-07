@@ -1,0 +1,36 @@
+{
+  "name": "@react-lib/button",
+  "version": "1.0.0",
+  "description": "Button",
+  "author": "Achal Jain <achal41@gmail.com>",
+  "homepage": "https://github.com/vinodloha/react-lib#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinodloha/react-lib.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/vinodloha/react-lib/issues"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.2.0"
+  }
+}

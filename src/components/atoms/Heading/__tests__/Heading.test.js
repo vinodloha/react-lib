@@ -1,12 +1,12 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 
-import { {{ properCase name }}Vanilla } from '../index';
+import { HeadingVanilla } from '../src/index';
 
-describe('<{{ properCase name }} />', () => {
+describe('<Heading />', () => {
   const testMessage = 'Test Message'
   beforeEach(() => {
-    render(<{{ properCase name }}Vanilla>{testMessage}</{{ properCase name }}Vanilla>);
+    render(<HeadingVanilla>{testMessage}</HeadingVanilla>);
   });
 
   test('should render with test message', () => {
