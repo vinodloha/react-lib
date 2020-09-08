@@ -9,7 +9,7 @@ import styled from 'styled-components';
 
 import styles from './Button.style';
 
-const Button = ({ children, type }) => <button type={type} className={styles.default}>{children}</button>;
+const Button = ({ children, className, type }) => <button type={type} className={className}>{children}</button>;
 
 Button.defaultProps = {
   inheritedStyles: '',
