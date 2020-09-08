@@ -9,7 +9,7 @@ import styled from 'styled-components';
 
 import styles from './{{ properCase name }}.style';
 
-const {{ properCase name }} = ({ children }) => <div className={styles.default}>{children}</div>;
+const {{ properCase name }} = ({ children, className }) => <div className={className}>{children}</div>;
 
 {{ properCase name }}.defaultProps = {
   inheritedStyles: '',

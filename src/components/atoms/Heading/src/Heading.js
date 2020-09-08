@@ -9,9 +9,9 @@ import styled from 'styled-components';
 
 import styles from './Heading.style';
 
-const Heading = ({ children, type }) => {
+const Heading = ({ children, type, className }) => {
   const HeadingType = type;
-  return <HeadingType className={styles.default}>{children}</HeadingType>;
+  return <HeadingType className={className}>{children}</HeadingType>;
 }
 
 Heading.defaultProps = {
