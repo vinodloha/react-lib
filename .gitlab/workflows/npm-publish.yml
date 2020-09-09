@@ -21,7 +21,6 @@ jobs:
         with:
           tag-prefix: ''
       - run: yarn
-      - run: yarn ci
       - run: yarn test # adds the test command
       - run: yarn build
       - run: yarn publish --access public

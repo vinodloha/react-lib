@@ -8,6 +8,7 @@ export default css`
   text-align: center;
   white-space: nowrap;
   background: transparent;
+  height: 40px;
 
   ${props => props.variant === 'primary' && `
     background-color: ${props.theme.ColorBackgroundButtonPrimaryBase};

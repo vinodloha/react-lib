@@ -1,5 +1,6 @@
 module.exports = {
   "stories": [
+    "../src/guide/**/*.story.mdx",
     "../src/**/*.story.mdx",
     "../src/**/*.story.@(js|jsx|ts|tsx)"
   ],

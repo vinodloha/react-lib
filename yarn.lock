@@ -4242,10 +4242,10 @@
     text-table "^0.2.0"
     webpack-log "^1.1.2"
 
-"@xts-ds/design-tokens@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@xts-ds/design-tokens/-/design-tokens-1.0.1.tgz#a99e5633af5e7997f72eba96d8608924a191b184"
-  integrity sha512-WxPWYRXiOkT9YY47aYnxs+ejwYlyVP8VZ8MSuPRrpYHg3y+bGIuMYQUHm5SCUpTxwiE9B5hUP9Rps4C4ozfsdg==
+"@xts-ds/design-tokens@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@xts-ds/design-tokens/-/design-tokens-1.0.2.tgz#ffd0476e62b384baaea5b2191a0b6b2a8d15a364"
+  integrity sha512-+j66QUxfvwTbFCp9IqaVvmX+bw3AXJrJzQvLiNWR0NXGYMoldm+AVLJEkJcan1NqgMgJFSEjBA73JR9lCpEKYg==
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
