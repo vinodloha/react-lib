@@ -1,7 +1,7 @@
 {
   "name": "@xts-ds/react-lib",
   "description": "A little component library ecosystem with Storybook",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "files": [
     "dist",
